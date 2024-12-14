@@ -8,12 +8,15 @@ h1 {
 h2 {
     font-size: 1.5rem;
 }
-h3 {
+h3,.h3 {
     font-size: 1.25rem;
 }
 
 .text-accent {
     color:var(--accent-primary);
+}
+.text-secondary {
+    color:var(--accent-secondary);
 }
 
 .text-shadow {

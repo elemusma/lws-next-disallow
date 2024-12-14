@@ -66,7 +66,7 @@ function Main() {
     );
 
     const tadeo = new THREE.Mesh(
-      new THREE.BoxGeometry(3, 3, 3),
+      new THREE.BoxGeometry(2, 2, 2),
       new THREE.MeshBasicMaterial({ map: tadeoTexture })
     );
 
@@ -91,7 +91,8 @@ function Main() {
     moon.position.setX(-10);
 
     tadeo.position.z = -5;
-    tadeo.position.x = 2;
+    tadeo.position.x = 4;
+    tadeo.position.y = 1;
 
     function moveCamera() {
       const t = document.body.getBoundingClientRect().top;
@@ -142,11 +143,14 @@ function Main() {
   }, []);
 
   return (
-    <canvas
-      ref={canvasRef}
-      id="bg"
-      style={{ width: "100%", height: "100vh" }}
-    />
+    <>
+      <canvas
+        ref={canvasRef}
+        id="bg"
+        style={{ width: "100%", height: "100vh" }}
+      />
+      <div className="canvas-overlay"></div>
+    </>
   );
 }
 

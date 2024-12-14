@@ -7,41 +7,80 @@ export default function Home() {
     <>
       <Main />
       <main>
-        <header>
-          <h1>Full-Stack Web & Software Engineering Solutions</h1>
-          <h2>iOS, Android, & Web Cross-Platform Apps</h2>
-          <p>
-            Full-Stack Web & Software Engineering Solutions. Enhance your
-            software infrastructure, streamline operations, position your
-            startup for funding success, and scale your business in 2025.
-          </p>
-          <div>
-            <a href="#schedule" className="btn-main">
-              Schedule a Call
-            </a>
+        <section style={{ paddingBottom: 100, minHeight: "61.6vh" }}>
+          <div className="container mx-auto px-4">
+            <div className="flex justify-between -mx-4">
+              <div className="lg:w-8/12 w-1/9 px-4">
+                <h1 className="text-secondary">
+                  Full-Stack Web &amp; Software Engineering Solutions
+                </h1>
+                <h2>iOS, Android, &amp; Web Cross-Platform Apps</h2>
+                <div className="lg:w-9/12 w-1/9">
+                  <p>
+                    Full-Stack Web & Software Engineering Solutions. Enhance
+                    your software infrastructure, streamline operations,
+                    position your startup for funding success, and scale your
+                    business in 2025.
+                  </p>
+                </div>
+                <div>
+                  <a href="#schedule" className="btn-main">
+                    Schedule a Call
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </header>
+        </section>
 
-        <blockquote>
-          <p>Driving Innovation, Scaling Solutions</p>
-        </blockquote>
+        <section
+          className=""
+          style={{ backgroundColor: "var(--accent-secondary)" }}
+        >
+          <div className="container mx-auto px-4">
+            <div className="flex justify-between -mx-4">
+              <div className="lg:w-1/3 w-1/9 pt-8 pb-8 text-center text-white">
+                <h2 className="h3" style={{}}>
+                  Custom web &amp; software solutions.
+                </h2>
+              </div>
+              <div
+                className="lg:w-1/3 w-1/9 pt-8 pb-8 text-center text-white"
+                style={{ backgroundColor: "var(--accent-quaternary)" }}
+              >
+                <h2 className="h3">Cross-platform apps for every device.</h2>
+              </div>
+              <div className="lg:w-1/3 w-1/9 pt-8 pb-8 text-center text-white">
+                <h2 className="h3">
+                  Streamline, fund, and scale effortlessly.
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <section>
-          <h2>📜 About Latino Web Studio</h2>
-          <p>
-            Full-Stack Web & Software Engineering Solutions. Enhance your
-            software infrastructure, streamline operations, position your
-            startup for funding success, and scale your business in 2024.
-          </p>
-          <p>
-            Custom web & software solutions. Cross-platform apps for every
-            device. Streamline, fund, and scale effortlessly.
-          </p>
-          <p>
-            Are you struggling to streamline your software processes? Do your
-            apps lack cross-platform compatibility? Is scaling your startup a
-            constant challenge?
-          </p>
+        <section style={{}}>
+          <div className="container mx-auto px-4">
+            <div className="flex -mx-4">
+              <div className="lg:w-1/2 w-1/9 pt-8 pb-8 px-4">
+                <h2>Driving Innovation, Scaling Solutions</h2>
+                <p>
+                  Full-Stack Web & Software Engineering Solutions. Enhance your
+                  software infrastructure, streamline operations, position your
+                  startup for funding success, and scale your business in 2024.
+                </p>
+                <p>
+                  Custom web & software solutions. Cross-platform apps for every
+                  device. Streamline, fund, and scale effortlessly.
+                </p>
+                <p>
+                  Are you struggling to streamline your software processes? Do
+                  your apps lack cross-platform compatibility? Is scaling your
+                  startup a constant challenge?
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section className={`light`}>
@@ -86,7 +125,7 @@ export default function Home() {
           </p>
         </section>
 
-        <section style={{ gridColumn: "3 / 12" }} id="schedule">
+        <section style={{ gridColumn: "2 / 12" }} id="schedule">
           <div className="container mx-auto px-4">
             <div className="flex justify-between -mx-4">
               <div className="px-4 text-center">
