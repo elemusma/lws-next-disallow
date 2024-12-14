@@ -181,7 +181,7 @@ export default function Home() {
               </div>
               <div
                 className="lg:w-1/3 w-full pt-8 pb-8 text-center"
-                style={{ backgroundColor: "var(--accent-quaternary)" }}
+                style={{ backgroundColor: "var(--accent-tertiary)" }}
               >
                 <h2 className="h3 flex items-center justify-center" style={{}}>
                   <span
@@ -201,17 +201,17 @@ export default function Home() {
               </div>
               <div
                 className="lg:w-1/3 w-full pt-8 pb-8 text-center"
-                style={{ backgroundColor: "var(--accent-tertiary)" }}
+                style={{ backgroundColor: "var(--accent-primary)" }}
               >
                 <h2 className="h3 flex items-center justify-center" style={{}}>
                   <span
-                    className="text-white flex justify-center items-center"
+                    className="flex justify-center items-center"
                     style={{
                       borderRadius: "50%",
                       height: 35,
                       width: 35,
                       marginRight: 8,
-                      backgroundColor: "var(--accent-secondary)",
+                      backgroundColor: "white",
                     }}
                   >
                     3.
