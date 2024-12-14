@@ -1,4 +1,5 @@
 // import GoogleReviews from "./components/google_reviews";
+import Image from "next/image";
 import CalendlyWidget from "./components/calendly";
 import Main from "./js/main";
 
@@ -37,20 +38,20 @@ export default function Home() {
           className=""
           style={{ backgroundColor: "var(--accent-secondary)" }}
         >
-          <div className="container mx-auto px-4">
-            <div className="flex justify-between -mx-4">
-              <div className="lg:w-1/3 w-1/9 pt-8 pb-8 text-center text-white">
+          <div className="container-fluid mx-auto px-4">
+            <div className="flex flex-wrap justify-between -mx-4">
+              <div className="lg:w-1/3 w-full pt-8 pb-8 text-center text-white">
                 <h2 className="h3" style={{}}>
                   Custom web &amp; software solutions.
                 </h2>
               </div>
               <div
-                className="lg:w-1/3 w-1/9 pt-8 pb-8 text-center text-white"
+                className="lg:w-1/3 w-full pt-8 pb-8 text-center text-white"
                 style={{ backgroundColor: "var(--accent-quaternary)" }}
               >
                 <h2 className="h3">Cross-platform apps for every device.</h2>
               </div>
-              <div className="lg:w-1/3 w-1/9 pt-8 pb-8 text-center text-white">
+              <div className="lg:w-1/3 w-full pt-8 pb-8 text-center text-white">
                 <h2 className="h3">
                   Streamline, fund, and scale effortlessly.
                 </h2>
@@ -59,31 +60,36 @@ export default function Home() {
           </div>
         </section>
 
-        <section style={{}}>
+        <section style={{ paddingTop: 200, paddingBottom: 100 }}>
           <div className="container mx-auto px-4">
             <div className="flex -mx-4">
-              <div className="lg:w-1/2 w-1/9 pt-8 pb-8 px-4">
-                <h2>Driving Innovation, Scaling Solutions</h2>
-                <p>
-                  Full-Stack Web & Software Engineering Solutions. Enhance your
-                  software infrastructure, streamline operations, position your
-                  startup for funding success, and scale your business in 2024.
-                </p>
-                <p>
-                  Custom web & software solutions. Cross-platform apps for every
-                  device. Streamline, fund, and scale effortlessly.
-                </p>
-                <p>
-                  Are you struggling to streamline your software processes? Do
-                  your apps lack cross-platform compatibility? Is scaling your
-                  startup a constant challenge?
-                </p>
+              <div className="lg:w-1/2 w-12/12 pt-8 pb-8 px-4">
+                <h2>
+                  Are you struggling to streamline your software processes?
+                </h2>
+                <ul>
+                  <li>Do your apps lack cross-platform compatibility?</li>
+                  <li>Are you spending too much on inefficient systems?</li>
+                  <li>Is scaling your startup a constant challenge?</li>
+                  <li>Are your tech operations holding back your growth?</li>
+                  <li>
+                    Do you need better infrastructure for funding success?
+                  </li>
+                  <li>
+                    Are you missing out on software optimization opportunities?
+                  </li>
+                </ul>
+                <div style={{ marginTop: 15 }}>
+                  <a href="#schedule" className="btn-main">
+                    Schedule a Call
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className={`light`}>
+        {/* <section className={`light`}>
           <h2>👩🏽‍🚀 Services Offered</h2>
           <p>
             Build apps that seamlessly work on iOS, Android, and Web, saving
@@ -100,43 +106,139 @@ export default function Home() {
             and a proven track record in scalable, efficient software back these
             solutions.
           </p>
-        </section>
+        </section> */}
 
-        <blockquote>
+        {/* <blockquote>
           <p>The best way out is always through - Robert Frost</p>
-        </blockquote>
+        </blockquote> */}
 
-        <section className={`left`}>
-          <h2>🌮 Testimonials</h2>
-          {/* <GoogleReviews /> */}
-          <p>
-            Tadeo is very professional and a great communicator! Highly
-            recommended! - Orion Madsen
-          </p>
-          <p>
-            Latino Web Studio & Tadeo have been amazing to work with! High
-            quality work, a gold standard in what he provides. El Mejor de
-            todos! - Johnny Oceguera
-          </p>
-          <p>
-            I had the pleasure of working with Tadeo Martinez from Latino Web
-            Studio, and the experience was nothing short of exceptional. -
-            Mauricio Mendoza
-          </p>
+        <section className={``} style={{ paddingTop: 100, paddingBottom: 100 }}>
+          <div className="container mx-auto px-4">
+            <div className="flex -mx-4 justify-center">
+              <div className="lg:w-1/2 w-12/12 pt-8 pb-8 px-4">
+                <h2>What Makes Latino Web Studio Different?</h2>
+                <p>
+                  Struggling to scale your business and develop robust apps?
+                  Specializing in cross-platform solutions, this approach
+                  simplifies tech operations and supports your funding goals.
+                  Years of experience and a proven track record in scalable,
+                  efficient software back these solutions. Is your business
+                  ready to unlock its true potential with innovative
+                  engineering? Schedule a call today to explore how these
+                  solutions can help.
+                </p>
+                <div style={{ marginTop: 15 }}>
+                  <a href="#schedule" className="btn-main">
+                    Schedule a Call
+                  </a>
+                </div>
+              </div>
+              <div className="lg:w-3/12 w-12/12 pt-8 pb-8 px-4">
+                <Image
+                  src="/assets/Headshot.png"
+                  alt="Logo"
+                  width={75}
+                  height={75}
+                  className=""
+                  style={{
+                    width: "100%",
+                  }}
+                />
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section style={{ gridColumn: "2 / 12" }} id="schedule">
+        <section
+          className=""
+          style={{
+            backgroundColor: "var(--accent-quaternary)",
+            marginTop: 100,
+            marginBottom: 100,
+          }}
+        >
+          <div className="container-fluid mx-auto px-4">
+            <div className="flex flex-wrap justify-between -mx-4">
+              <div
+                className="lg:w-1/3 w-full pt-8 pb-8 text-center"
+                style={{ backgroundColor: "var(--accent-secondary)" }}
+              >
+                <h2 className="h3 flex items-center justify-center" style={{}}>
+                  <span
+                    className="flex justify-center items-center"
+                    style={{
+                      borderRadius: "50%",
+                      height: 35,
+                      width: 35,
+                      marginRight: 8,
+                      backgroundColor: "var(--accent-primary)",
+                    }}
+                  >
+                    1.
+                  </span>
+                  <span className="text-white">Schedule Free Consultation</span>
+                </h2>
+              </div>
+              <div
+                className="lg:w-1/3 w-full pt-8 pb-8 text-center"
+                style={{ backgroundColor: "var(--accent-quaternary)" }}
+              >
+                <h2 className="h3 flex items-center justify-center" style={{}}>
+                  <span
+                    className="text-white flex justify-center items-center"
+                    style={{
+                      borderRadius: "50%",
+                      height: 35,
+                      width: 35,
+                      marginRight: 8,
+                      backgroundColor: "var(--accent-secondary)",
+                    }}
+                  >
+                    2.
+                  </span>
+                  <span>Understand Your Vision</span>
+                </h2>
+              </div>
+              <div
+                className="lg:w-1/3 w-full pt-8 pb-8 text-center"
+                style={{ backgroundColor: "var(--accent-tertiary)" }}
+              >
+                <h2 className="h3 flex items-center justify-center" style={{}}>
+                  <span
+                    className="text-white flex justify-center items-center"
+                    style={{
+                      borderRadius: "50%",
+                      height: 35,
+                      width: 35,
+                      marginRight: 8,
+                      backgroundColor: "var(--accent-secondary)",
+                    }}
+                  >
+                    3.
+                  </span>
+                  <span>Launch Scalable Software</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section style={{ paddingTop: 100, paddingBottom: 100 }} id="schedule">
           <div className="container mx-auto px-4">
-            <div className="flex justify-between -mx-4">
-              <div className="px-4 text-center">
+            <div
+              className="flex justify-center -mx-4"
+              style={{ flexWrap: "wrap" }}
+            >
+              <div className="px-4 text-center lg:w-1/2 w-12/12">
                 <h2>How to Get Started</h2>
                 <p>
-                  If you are a startup founder or business owner looking to
-                  scale operations and build robust, cross-platform apps,
-                  schedule a call using the calendar below. The next steps will
-                  assess your needs and ensure the TechFusion System is the
-                  right fit for your business.
+                  If you are a <strong>startup founder</strong> or{" "}
+                  <strong>business owner</strong> looking to scale operations
+                  and build robust, cross-platform apps, schedule a call using
+                  the calendar below.
                 </p>
+              </div>
+              <div className="px-4 text-center lg:w-full w-full">
                 {/* <!-- Calendly inline widget begin --> */}
                 <CalendlyWidget />
                 {/* <!-- Calendly inline widget end --> */}
@@ -145,8 +247,11 @@ export default function Home() {
           </div>
         </section>
 
-        <blockquote>
-          <p>Thanks for visiting!</p>
+        <blockquote
+          className="text-center"
+          style={{ paddingTop: 100, paddingBottom: 100 }}
+        >
+          <p className="px-4">Thanks for visiting!</p>
         </blockquote>
       </main>
     </>

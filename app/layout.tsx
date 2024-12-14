@@ -5,6 +5,7 @@ import "./globals.css";
 // import "./styles/01.scss";
 import "./styles/btn.scss";
 import "./styles/fonts.scss";
+import "./styles/home.scss";
 // import "./styles/layout.scss";
 
 const geistSans = Geist({

@@ -22,6 +22,35 @@
   }
 }
 
+/*** Works on common browsers ***/
+::selection {
+  background-color: var(--accent-primary);
+  color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+  background-color: var(--accent-primary);
+  color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+  background-color: var(--accent-primary);
+  color: #fff;
+}
+
+::-ms-selection {
+  background-color: var(--accent-primary);
+  color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+  background-color: var(--accent-primary);
+  color: #fff;
+}
+
 body {
   /* color: var(--foreground); */
   background: var(--background);

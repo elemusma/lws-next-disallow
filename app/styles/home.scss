@@ -1,0 +1,25 @@
+ul li {
+    position: relative;
+    height:20px;
+    padding:12px 0px;
+}
+
+ul li:before {
+    content: "{ }";
+    position: absolute;
+    left: -30px;
+    color: var(--accent-secondary);
+    background: var(--accent-primary);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    padding-bottom: 2.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    padding-left: 30px;
+}
