@@ -22,7 +22,7 @@ export default function Home() {
                 <div className="lg:w-9/12 w-1/9">
                   <p>
                     Position your startup for successful funding rounds and
-                    expand your business' reach with robust cross-platform app
+                    expand your business reach with robust cross-platform app
                     development. Scale your business effectively in{" "}
                     {currentYear} and beyond.
                   </p>

@@ -1,21 +1,21 @@
 // components/ThreeScene.js
 "use client"; // Directive to ensure this runs only on the client-side in Next.js
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
 function Main() {
-  const [isDesktop, setIsDesktop] = useState(false);
+  // const [isDesktop, setIsDesktop] = useState(false);
 
-  useEffect(() => {
-    const checkMedia = () => {
-      setIsDesktop(window.innerWidth > 1280); // Assumes 768px as the breakpoint between desktop and mobile
-    };
+  // useEffect(() => {
+  //   const checkMedia = () => {
+  //     setIsDesktop(window.innerWidth > 1280); // Assumes 768px as the breakpoint between desktop and mobile
+  //   };
 
-    checkMedia(); // Check on mount
-    window.addEventListener("resize", checkMedia); // Add resize listener
+  //   checkMedia(); // Check on mount
+  //   window.addEventListener("resize", checkMedia); // Add resize listener
 
-    return () => window.removeEventListener("resize", checkMedia); // Cleanup listener on unmount
-  }, []);
+  //   return () => window.removeEventListener("resize", checkMedia); // Cleanup listener on unmount
+  // }, []);
   const canvasRef = useRef(null); // Use useRef to reference the canvas DOM element
   let stars: THREE.Mesh[] = []; // Declare stars array inside the component but outside the useEffect
 
