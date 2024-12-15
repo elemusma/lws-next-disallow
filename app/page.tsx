@@ -1,27 +1,30 @@
 // import GoogleReviews from "./components/google_reviews";
 import Image from "next/image";
 import CalendlyWidget from "./components/calendly";
+import Footer from "./components/footer";
 import Main from "./js/main";
+import "./styles/body.scss";
 
 export default function Home() {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <Main />
       <main>
-        <section style={{ paddingBottom: 100, minHeight: "61.6vh" }}>
+        <section className="hero" style={{}}>
           <div className="container mx-auto px-4">
             <div className="flex justify-between -mx-4">
               <div className="lg:w-8/12 w-1/9 px-4">
-                <h1 className="text-secondary">
-                  Full-Stack Web &amp; Software Engineering Solutions
+                <h1 className="text-secondary animated-heading">
+                  Full-Stack Web &amp; Software Engineering
                 </h1>
-                <h2>iOS, Android, &amp; Web Cross-Platform Apps</h2>
+                <h2>iOS, Android, &amp; Web Apps</h2>
                 <div className="lg:w-9/12 w-1/9">
                   <p>
-                    Full-Stack Web & Software Engineering Solutions. Enhance
-                    your software infrastructure, streamline operations,
-                    position your startup for funding success, and scale your
-                    business in 2025.
+                    Position your startup for successful funding rounds and
+                    expand your business' reach with robust cross-platform app
+                    development. Scale your business effectively in{" "}
+                    {currentYear} and beyond.
                   </p>
                 </div>
                 <div>
@@ -40,18 +43,18 @@ export default function Home() {
         >
           <div className="container-fluid mx-auto px-4">
             <div className="flex flex-wrap justify-between -mx-4">
-              <div className="lg:w-1/3 w-full pt-8 pb-8 text-center text-white">
+              <div className="lg:w-1/3 w-full lg:pt-8 lg:pb-8 pt-4 pb-4 px-4 lg:text-center text-white">
                 <h2 className="h3" style={{}}>
                   Custom web &amp; software solutions.
                 </h2>
               </div>
               <div
-                className="lg:w-1/3 w-full pt-8 pb-8 text-center text-white"
+                className="lg:w-1/3 w-full lg:pt-8 lg:pb-8 pt-4 pb-4 px-4 lg:text-center text-white"
                 style={{ backgroundColor: "var(--accent-quaternary)" }}
               >
                 <h2 className="h3">Cross-platform apps for every device.</h2>
               </div>
-              <div className="lg:w-1/3 w-full pt-8 pb-8 text-center text-white">
+              <div className="lg:w-1/3 w-full lg:pt-8 lg:pb-8 pt-4 pb-4 px-4 lg:text-center text-white">
                 <h2 className="h3">
                   Streamline, fund, and scale effortlessly.
                 </h2>
@@ -68,6 +71,10 @@ export default function Home() {
                   Are you struggling to streamline your software processes?
                 </h2>
                 <ul>
+                  <li>
+                    Are you trying to figure out the best tech stack for your
+                    MVP?
+                  </li>
                   <li>Do your apps lack cross-platform compatibility?</li>
                   <li>Are you spending too much on inefficient systems?</li>
                   <li>Is scaling your startup a constant challenge?</li>
@@ -136,8 +143,7 @@ export default function Home() {
                   Years of experience and a proven track record in scalable,
                   efficient software back these solutions. Is your business
                   ready to unlock its true potential with innovative
-                  engineering? Schedule a call today to explore how these
-                  solutions can help.
+                  engineering?
                 </p>
                 <div style={{ marginTop: 15 }}>
                   <a href="#schedule" className="btn-main">
@@ -163,7 +169,10 @@ export default function Home() {
                 className="lg:w-1/3 w-full pt-8 pb-8 text-center"
                 style={{ backgroundColor: "var(--accent-secondary)" }}
               >
-                <h2 className="h3 flex items-center justify-center" style={{}}>
+                <h2
+                  className="h3 flex items-center lg:justify-center px-4"
+                  style={{}}
+                >
                   <span
                     className="flex justify-center items-center"
                     style={{
@@ -180,10 +189,13 @@ export default function Home() {
                 </h2>
               </div>
               <div
-                className="lg:w-1/3 w-full pt-8 pb-8 text-center"
+                className="lg:w-1/3 w-full pt-8 pb-8 text-center px-4"
                 style={{ backgroundColor: "var(--accent-tertiary)" }}
               >
-                <h2 className="h3 flex items-center justify-center" style={{}}>
+                <h2
+                  className="h3 flex items-center lg:justify-center"
+                  style={{}}
+                >
                   <span
                     className="text-white flex justify-center items-center"
                     style={{
@@ -200,10 +212,13 @@ export default function Home() {
                 </h2>
               </div>
               <div
-                className="lg:w-1/3 w-full pt-8 pb-8 text-center"
+                className="lg:w-1/3 w-full pt-8 pb-8 text-center px-4"
                 style={{ backgroundColor: "var(--accent-primary)" }}
               >
-                <h2 className="h3 flex items-center justify-center" style={{}}>
+                <h2
+                  className="h3 flex items-center lg:justify-center"
+                  style={{}}
+                >
                   <span
                     className="flex justify-center items-center"
                     style={{
@@ -229,7 +244,7 @@ export default function Home() {
               className="flex justify-center -mx-4"
               style={{ flexWrap: "wrap" }}
             >
-              <div className="px-4 text-center lg:w-1/2">
+              <div className="px-4 text-center lg:w-1/2 pb-5">
                 <h2>How to Get Started</h2>
                 <p>
                   If you are a <strong>startup founder</strong> or{" "}
@@ -238,7 +253,7 @@ export default function Home() {
                   the calendar below.
                 </p>
               </div>
-              <div className="px-4 text-center w-9/12">
+              <div className="px-4 text-center lg:w-full w-9/12">
                 {/* <!-- Calendly inline widget begin --> */}
                 <CalendlyWidget />
                 {/* <!-- Calendly inline widget end --> */}
@@ -247,13 +262,18 @@ export default function Home() {
           </div>
         </section>
 
-        <blockquote
-          className="text-center"
-          style={{ paddingTop: 100, paddingBottom: 100 }}
-        >
-          <p className="px-4">Thanks for visiting!</p>
-        </blockquote>
+        <section className="quote-section text-center">
+          <p>
+            <strong>
+              If you are not willing to risk the unusual, you will have to
+              settle for the ordinary.
+            </strong>
+            <br />
+            <em>Jim Rohn</em>
+          </p>
+        </section>
       </main>
+      <Footer />
     </>
   );
 }

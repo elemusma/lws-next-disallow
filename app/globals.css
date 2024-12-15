@@ -92,7 +92,7 @@ main {
   position: relative;
   width: 100%;
   margin: 0px auto;
-  padding: 170px 0px;
+  padding: 100px 0px;
   /* display: grid; */
   /* grid-template-columns: repeat(12, 1fr); */
 }

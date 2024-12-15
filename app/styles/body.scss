@@ -1,0 +1,11 @@
+.bg-accent {
+    background:var(--accent-primary);
+
+    &-secondary {
+        background:var(--accent-secondary);
+    }
+}
+
+// .bg-accent-secondary {
+//     background:var(--accent-secondary);
+// }

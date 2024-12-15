@@ -29,7 +29,7 @@ function CalendlyWidget() {
     <div
       className="calendly-inline-widget"
       data-url="https://calendly.com/latino-web-studio/web-check-in"
-      style={{ minWidth: 320, height: 700 }}
+      style={{ minWidth: "100%", height: 700 }}
     ></div>
   );
 }

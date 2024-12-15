@@ -1,25 +1,95 @@
-ul li {
-    position: relative;
-    height:20px;
-    padding:12px 0px;
+.hero {
+    // padding-bottom: 50px;
+    min-height: 58.5vh; // Default mobile view
+
+    @media only screen and (min-width: 768px) { // Tailwind's 'md'
+        min-height: 46vh;
+        padding-top: 200px;
+        min-height: calc(100vh - 288px);
+    }
+
+    @media only screen and (min-width: 1024px) { // Tailwind's 'lg'
+        // min-height: 61.6vh;
+        // min-height: 72vh;
+        padding-top: 100px;
+        min-height: calc(100vh - 186px);
+    }
 }
 
-ul li:before {
-    content: "{ }";
-    position: absolute;
-    left: -30px;
-    color: var(--accent-secondary);
-    background: var(--accent-primary);
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    font-size: 12px;
-    padding-bottom: 2.5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 ul {
     padding-left: 30px;
-}
+  
+    li {
+      position: relative;
+      min-height: 20px;
+      padding: 5px 0;
+  
+      &::before {
+        content: "{ }";
+        position: absolute;
+        left: -30px;
+        top: 8px;
+        color: var(--accent-secondary);
+        background: var(--accent-primary);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        padding-bottom: 2.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  
+
+// Mixin for applying animated gradient
+@mixin animated-gradient {
+    // background: linear-gradient(90deg, #ec1f2d, #1f184a, #b5539f, #03baaf);
+    background: linear-gradient(90deg, #b81022, #0e113a, #8a3475, #028a8e);
+    background-size: 400% 100%; // Extends the background for movement
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    animation: gradient-shift 25s ease infinite; // Reference to the keyframes animation
+  }
+  
+  .quote-section {
+    text-align: center;
+    padding: 100px 0;
+  
+    p {
+      padding: 0 16px;
+      font-size: 2rem;
+      line-height: 1.6;
+      @include animated-gradient; // Apply the mixin here
+  
+      em {
+        display: block;
+        margin-top: 10px;
+        font-style: italic;
+        font-size: 1rem;
+        color: #ffd1e8;
+      }
+    }
+  }
+  
+  // Define the animation keyframes
+  @keyframes gradient-shift {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  // Apply the same animated gradient effect to an h1 outside the quote section
+  h1.animated-heading {
+    @include animated-gradient; // Reuse the mixin for the h1
+    // padding: 20px 0; // Additional styling specific to h1
+    // font-size: 2rem; // Larger font size for headings
+  }
+  

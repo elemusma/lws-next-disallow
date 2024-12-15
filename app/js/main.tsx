@@ -1,9 +1,21 @@
 // components/ThreeScene.js
 "use client"; // Directive to ensure this runs only on the client-side in Next.js
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 
 function Main() {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const checkMedia = () => {
+      setIsDesktop(window.innerWidth > 1280); // Assumes 768px as the breakpoint between desktop and mobile
+    };
+
+    checkMedia(); // Check on mount
+    window.addEventListener("resize", checkMedia); // Add resize listener
+
+    return () => window.removeEventListener("resize", checkMedia); // Cleanup listener on unmount
+  }, []);
   const canvasRef = useRef(null); // Use useRef to reference the canvas DOM element
   let stars: THREE.Mesh[] = []; // Declare stars array inside the component but outside the useEffect
 
@@ -65,10 +77,14 @@ function Main() {
       "assets/headshot-square.jpg"
     );
 
-    const tadeo = new THREE.Mesh(
-      new THREE.BoxGeometry(2, 2, 2),
-      new THREE.MeshBasicMaterial({ map: tadeoTexture })
-    );
+    // const tadeoGeometry = isDesktop
+    //   ? new THREE.BoxGeometry(2, 2, 2) // Bigger geometry for desktop
+    //   : new THREE.BoxGeometry(1, 1, 1); // Smaller geometry for mobile
+
+    const tadeoGeometry = new THREE.BoxGeometry(1, 1, 1);
+
+    const tadeoMaterial = new THREE.MeshBasicMaterial({ map: tadeoTexture });
+    const tadeo = new THREE.Mesh(tadeoGeometry, tadeoMaterial);
 
     scene.add(tadeo);
 
@@ -91,8 +107,14 @@ function Main() {
     moon.position.setX(-10);
 
     tadeo.position.z = -5;
-    tadeo.position.x = 4;
-    tadeo.position.y = 1;
+    tadeo.position.x = 1;
+    // tadeo.position.x = isDesktop ? 4 : 4;
+    tadeo.position.y = -0.5;
+    // tadeo.position.x = isDesktop ? 4 : 1;
+    // {
+    //   isDesktop ? (tadeo.position.x = 4) : (tadeo.position.x = 4);
+    // }
+    // tadeo.position.y = isDesktop ? 1 : -0;
 
     function moveCamera() {
       const t = document.body.getBoundingClientRect().top;
