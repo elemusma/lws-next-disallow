@@ -65,19 +65,27 @@ export default function Home() {
 
         <section style={{ paddingTop: 200, paddingBottom: 100 }}>
           <div className="container mx-auto px-4">
-            <div className="flex -mx-4">
-              <div className="lg:w-1/2 w-12/12 pt-8 pb-8 px-4">
+            <div className="flex flex-wrap -mx-4">
+              <div className="w-full pb-8 px-4 text-center">
                 <h2>
                   Are you struggling to streamline your software processes?
                 </h2>
-                <ul>
+              </div>
+              <div className="lg:w-1/2 w-full px-4">
+                <ul style={{ textShadow: "0px 0px 3px white" }}>
                   <li>
                     Are you trying to figure out the best tech stack for your
                     MVP?
                   </li>
                   <li>Do your apps lack cross-platform compatibility?</li>
-                  <li>Are you spending too much on inefficient systems?</li>
+                  <li>
+                    Are you spending too much time on inefficient systems?
+                  </li>
                   <li>Is scaling your startup a constant challenge?</li>
+                </ul>
+              </div>
+              <div className="lg:w-1/2 w-full px-4">
+                <ul style={{ textShadow: "0px 0px 3px white" }}>
                   <li>Are your tech operations holding back your growth?</li>
                   <li>
                     Do you need better infrastructure for funding success?
@@ -86,6 +94,8 @@ export default function Home() {
                     Are you missing out on software optimization opportunities?
                   </li>
                 </ul>
+              </div>
+              <div className="w-full pb-8 px-4 text-center">
                 <div style={{ marginTop: 15 }}>
                   <a href="#schedule" className="btn-main">
                     Schedule a Call
