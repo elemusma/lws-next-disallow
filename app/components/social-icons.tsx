@@ -46,7 +46,7 @@ const SocialIcons = () => {
       </a>
       {/* CodePen */}
       <a
-        href="https://codepen.io/brownsurfing"
+        href="https://codepen.io/latinowebstudio"
         title="CodePen Profile Link"
         target="_blank"
         style={{ textDecoration: "none" }}
