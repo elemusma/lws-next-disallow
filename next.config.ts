@@ -12,7 +12,8 @@ const nextConfig: NextConfig = {
             // value: 'latinowebstudio.com'
           }
         ],
-        destination: 'https://resources.latinowebstudio.com/:path*',
+        destination: 'https://resources.latinowebstudio.com/((?!$).*)',
+        // destination: 'https://resources.latinowebstudio.com/:path*',
         permanent: true, // or false, depending on your needs for SEO or HTTP status
       }
     ];
