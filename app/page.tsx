@@ -114,8 +114,20 @@ export default function Home() {
 
         <section className={``} style={{ paddingTop: 100, paddingBottom: 100 }}>
           <div className="container mx-auto px-4">
-            <div className="flex -mx-4 justify-center">
-              <div className="lg:w-1/2 w-12/12 pt-8 pb-8 px-4">
+            <div className="flex flex-wrap flex-row-reverse -mx-4 lg:justify-center justify-end">
+              <div className="w-3/12 pt-8 pb-8 px-4">
+                <Image
+                  src="/assets/Headshot.png"
+                  alt="Logo"
+                  width={75}
+                  height={75}
+                  className=""
+                  style={{
+                    width: "100%",
+                  }}
+                />
+              </div>
+              <div className="lg:w-1/2 w-11/12 lg:pt-8 pb-8 px-4">
                 <h2>What Makes Latino Web Studio Different?</h2>
                 <p>
                   Struggling to scale your business and develop robust apps?
@@ -132,18 +144,6 @@ export default function Home() {
                     Schedule a Call
                   </a>
                 </div>
-              </div>
-              <div className="lg:w-3/12 w-12/12 pt-8 pb-8 px-4">
-                <Image
-                  src="/assets/Headshot.png"
-                  alt="Logo"
-                  width={75}
-                  height={75}
-                  className=""
-                  style={{
-                    width: "100%",
-                  }}
-                />
               </div>
             </div>
           </div>
@@ -229,7 +229,7 @@ export default function Home() {
               className="flex justify-center -mx-4"
               style={{ flexWrap: "wrap" }}
             >
-              <div className="px-4 text-center lg:w-1/2 w-12/12">
+              <div className="px-4 text-center lg:w-1/2">
                 <h2>How to Get Started</h2>
                 <p>
                   If you are a <strong>startup founder</strong> or{" "}
@@ -238,7 +238,7 @@ export default function Home() {
                   the calendar below.
                 </p>
               </div>
-              <div className="px-4 text-center lg:w-full w-full">
+              <div className="px-4 text-center w-9/12">
                 {/* <!-- Calendly inline widget begin --> */}
                 <CalendlyWidget />
                 {/* <!-- Calendly inline widget end --> */}

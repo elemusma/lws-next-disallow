@@ -7,7 +7,7 @@ const Nav = () => {
       <nav className="fixed inset-x-0 pt-3" style={{ zIndex: "100" }}>
         <div className="container mx-auto px-4">
           <div className="flex justify-between -mx-4">
-            <div className="lg:w-1/3 w-1/9 px-4 flex items-center">
+            <div className="lg:w-1/3 w-3/4 px-4 flex items-center logo">
               <div
                 className="flex items-center p-1"
                 style={{
@@ -16,7 +16,7 @@ const Nav = () => {
                 }}
               >
                 <div
-                  className="relative flex items-center justify-center"
+                  className="relative flex items-center justify-center logo-container"
                   style={{ width: 75, height: 75 }}
                 >
                   <Image
@@ -36,18 +36,18 @@ const Nav = () => {
                     alt="Logo"
                     width={40}
                     height={40}
-                    className="relative"
+                    className="relative logo-bird"
                   />
                 </div>
                 <div style={{ paddingLeft: 15, paddingRight: 10 }}>
                   <span
-                    className="text-accent d-block text-shadow"
+                    className="text-accent d-block text-shadow logo-text"
                     style={{ fontSize: "1.5rem", margin: 0, lineHeight: 1 }}
                   >
                     Latino Web Studio
                   </span>
                   <p
-                    className="text-white d-block"
+                    className="text-white d-block logo-subtext"
                     style={{ margin: 0, fontSize: "70%", lineHeight: 1 }}
                   >
                     <em>Driving Innovation, Scaling Solutions</em>
@@ -56,10 +56,10 @@ const Nav = () => {
               </div>
             </div>
             {/* end of column */}
-            <div className="lg:w-1/3 w-1/3 px-4 flex justify-end">
+            <div className="lg:w-1/3 w-1/2 px-4 flex justify-end">
               <a
                 href="#schedule"
-                className="p-1 flex items-center btn-main justify-center"
+                className="p-1 flex items-center btn-main btn-nav justify-center"
                 style={{
                   height: 83,
                   width: 200,
