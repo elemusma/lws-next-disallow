@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/:path*',
+        source: '/((?!$).*)',  // This regex matches any path except the root '/'
         has: [
           {
             type: 'host',
