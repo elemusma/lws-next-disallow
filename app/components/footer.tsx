@@ -25,7 +25,7 @@ function Footer() {
               </p>
               <SocialIcons />
             </div>
-            <div className="lg:w-1/3 w-full px-4 pt-5">
+            {/* <div className="lg:w-1/3 w-full px-4 pt-5">
               <h2>Tools</h2>
               <a
                 className="block"
@@ -69,7 +69,7 @@ function Footer() {
               >
                 Fulfillment Policy
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
         <div

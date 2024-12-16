@@ -32,7 +32,7 @@ const SocialIcons = () => {
       </a>
       {/* LinkedIn */}
       <a
-        href="https://www.linkedin.com/in/efrain-lemus-a0a117133/"
+        href="https://www.linkedin.com/in/etlm/"
         title="LinkedIn Profile Link"
         target="_blank"
         style={{ textDecoration: "none" }}
