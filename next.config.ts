@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
         has: [
           {
             type: 'host',
-            value: 'allpensandink.com'
+            value: 'latinowebstudio.com'
           }
         ],
         destination: 'https://resources.latinowebstudio.com/:path+',
