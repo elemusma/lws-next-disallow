@@ -263,7 +263,7 @@ export default function Home() {
                   the calendar below.
                 </p>
               </div>
-              <div className="px-4 text-center lg:w-full w-9/12">
+              <div className="px-4 text-center lg:w-full w-9/12" id="calendar">
                 {/* <!-- Calendly inline widget begin --> */}
                 <CalendlyWidget />
                 {/* <!-- Calendly inline widget end --> */}
