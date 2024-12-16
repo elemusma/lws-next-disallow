@@ -4,17 +4,15 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/((?!$).*)',  // This regex matches any path except the root '/'
+        source: '/:path+',
         has: [
           {
             type: 'host',
             value: 'allpensandink.com'
-            // value: 'latinowebstudio.com'
           }
         ],
-        destination: 'https://resources.latinowebstudio.com/((?!$).*)',
-        // destination: 'https://resources.latinowebstudio.com/:path*',
-        permanent: true, // or false, depending on your needs for SEO or HTTP status
+        destination: 'https://resources.latinowebstudio.com/:path+',
+        permanent: true,
       }
     ];
   },
