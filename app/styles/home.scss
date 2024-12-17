@@ -93,3 +93,12 @@ ul {
     // font-size: 2rem; // Larger font size for headings
   }
   
+@media only screen and (max-width:1280px) {
+iframe{
+  height: 1200px!important;
+  overflow-y: hidden;
+}
+.quote-section {
+  padding-top: 300px;
+}
+}
