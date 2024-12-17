@@ -12,10 +12,12 @@ function Footer() {
           position: "relative",
         }}
       >
-        <div className="flex flex-wrap justify-between -mx-4">
-          <div className="lg:w-1/3 w-full px-4">
-            <div className="lg:w-full w-7/12">
-              <Logo />
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-between -mx-4">
+            <div className="lg:w-1/3 w-full px-4">
+              <div className="lg:w-full w-7/12">
+                <Logo />
+              </div>
             </div>
           </div>
         </div>
