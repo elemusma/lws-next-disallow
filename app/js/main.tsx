@@ -81,7 +81,7 @@ function Main() {
     //   ? new THREE.BoxGeometry(2, 2, 2) // Bigger geometry for desktop
     //   : new THREE.BoxGeometry(1, 1, 1); // Smaller geometry for mobile
 
-    const tadeoGeometry = new THREE.BoxGeometry(1, 1, 1);
+    const tadeoGeometry = new THREE.BoxGeometry(2, 2, 2);
 
     const tadeoMaterial = new THREE.MeshBasicMaterial({ map: tadeoTexture });
     const tadeo = new THREE.Mesh(tadeoGeometry, tadeoMaterial);
@@ -109,7 +109,7 @@ function Main() {
     tadeo.position.z = -5;
     tadeo.position.x = 1;
     // tadeo.position.x = isDesktop ? 4 : 4;
-    tadeo.position.y = -0.5;
+    tadeo.position.y = 0;
     // tadeo.position.x = isDesktop ? 4 : 1;
     // {
     //   isDesktop ? (tadeo.position.x = 4) : (tadeo.position.x = 4);

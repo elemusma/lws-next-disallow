@@ -26,6 +26,7 @@ export default function Home() {
                     development. Scale your business effectively in{" "}
                     {currentYear} and beyond.
                   </p>
+                  {/* <Login /> */}
                 </div>
                 <div>
                   <a href="#schedule" className="btn-main">
