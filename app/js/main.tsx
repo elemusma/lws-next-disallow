@@ -74,7 +74,7 @@ function Main() {
 
     // avatar
     const tadeoTexture = new THREE.TextureLoader().load(
-      "assets/headshot-square.jpg"
+      "assets/Headshot-Square.png"
     );
 
     // const tadeoGeometry = isDesktop

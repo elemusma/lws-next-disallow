@@ -135,7 +135,7 @@ export default function Home() {
             <div className="flex flex-wrap flex-row-reverse -mx-4 lg:justify-center justify-end">
               <div className="w-3/12 pt-8 pb-8 px-4">
                 <Image
-                  src="/assets/Headshot.png"
+                  src="/assets/Headshot_1.png"
                   alt="Logo"
                   width={75}
                   height={75}
