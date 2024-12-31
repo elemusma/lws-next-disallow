@@ -137,8 +137,8 @@ export default function Home() {
                 <Image
                   src="/assets/Headshot_1.png"
                   alt="Logo"
-                  width={75}
-                  height={75}
+                  width={600}
+                  height={600}
                   className=""
                   style={{
                     width: "100%",
