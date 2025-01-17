@@ -258,10 +258,8 @@ export default function Home() {
               <div className="px-4 text-center lg:w-1/2 pb-5">
                 <h2>How to Get Started</h2>
                 <p>
-                  If you are a <strong>startup founder</strong> wanting to
-                  create a cross-platform app or a{" "}
-                  <strong>business owner</strong> looking to grow, schedule a
-                  call using the calendar below.
+                  Schedule a time below to discuss ideas to help you save time
+                  while growing your business.
                 </p>
               </div>
               <div className="px-4 text-center w-full" id="calendar">
