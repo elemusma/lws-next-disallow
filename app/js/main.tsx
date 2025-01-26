@@ -74,8 +74,11 @@ function Main() {
 
     // avatar
     const tadeoTexture = new THREE.TextureLoader().load(
-      "assets/Headshot-Square.png"
+      "assets/Code-Examples.jpg"
     );
+    // const tadeoTexture = new THREE.TextureLoader().load(
+    //   "assets/Headshot-Square.png"
+    // );
 
     // const tadeoGeometry = isDesktop
     //   ? new THREE.BoxGeometry(2, 2, 2) // Bigger geometry for desktop

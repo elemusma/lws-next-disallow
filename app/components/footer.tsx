@@ -26,9 +26,9 @@ function Footer() {
           <div className="flex flex-wrap justify-between -mx-4">
             <div className="lg:w-1/3 w-full px-4">
               <p className="pt-5">
-                Enhance your software infrastructure, streamline operations,
-                position your startup for funding success, and scale your
-                business in {currentYear}.
+                We allow you to focus on growing your business without having to
+                stress about the technical skills of design and programming. Say
+                goodbye to flakey freelancers in {currentYear}.
               </p>
               <SocialIcons />
             </div>

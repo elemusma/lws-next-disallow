@@ -1,22 +1,14 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  async redirects() {
-    return [
+  images: {
+    remotePatterns: [
       {
-        source: '/:path+',
-        has: [
-          {
-            type: 'host',
-            value: 'latinowebstudio.com'
-          }
-        ],
-        destination: 'https://resources.latinowebstudio.com/:path+',
-        permanent: true,
-      }
-    ];
+        protocol: 'https',
+        hostname: 'resources.latinowebstudio.com',
+      },
+    ],
   },
-  // other configurations...
 };
 
 export default nextConfig;
