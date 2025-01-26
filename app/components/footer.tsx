@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "../styles/footer.scss";
 import Logo from "./logo";
 import SocialIcons from "./social-icons";
@@ -16,7 +17,9 @@ function Footer() {
           <div className="flex flex-wrap justify-between -mx-4">
             <div className="lg:w-1/3 w-full px-4">
               <div className="lg:w-full w-7/12">
-                <Logo />
+                <Link href="/">
+                  <Logo />
+                </Link>
               </div>
             </div>
           </div>

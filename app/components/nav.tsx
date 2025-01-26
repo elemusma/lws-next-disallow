@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "../styles/nav.scss";
 import Logo from "./logo";
 
@@ -8,9 +9,9 @@ const Nav = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between -mx-4">
             <div className="lg:w-1/3 w-3/4 px-4 flex items-center">
-              <a href="/">
+              <Link href="/">
                 <Logo />
-              </a>
+              </Link>
             </div>
             {/* end of column */}
             <div className="lg:w-1/3 w-1/2 px-4 flex justify-end">
