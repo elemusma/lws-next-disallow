@@ -128,9 +128,9 @@ export default function Home() {
                   End-to-End Technical Management:
                 </h3>
                 <p className="" style={{ fontSize: 18 }}>
-                  Don't worry about technical problems. Programming, theme /
-                  software updates, ads, SEO, emails, DNS, hosting. We'll take
-                  care of it.
+                  Don&apos;t worry about technical problems. Programming, theme
+                  / software updates, ads, SEO, emails, DNS, hosting. We&apos;ll
+                  take care of it.
                 </p>
               </div>
 
@@ -148,8 +148,8 @@ export default function Home() {
                 </h3>
                 <p className="" style={{ fontSize: 18 }}>
                   Graphic design for landing pages, funnels, business cards,
-                  logo, websites, and more. We'll create a custom design for
-                  your needs.
+                  logo, websites, and more. We&apos;ll create a custom design
+                  for your needs.
                 </p>
               </div>
 

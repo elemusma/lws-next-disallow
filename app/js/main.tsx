@@ -1,26 +1,15 @@
-// components/ThreeScene.js
-"use client"; // Directive to ensure this runs only on the client-side in Next.js
+"use client";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
 function Main() {
-  // const [isDesktop, setIsDesktop] = useState(false);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
-  // useEffect(() => {
-  //   const checkMedia = () => {
-  //     setIsDesktop(window.innerWidth > 1280); // Assumes 768px as the breakpoint between desktop and mobile
-  //   };
-
-  //   checkMedia(); // Check on mount
-  //   window.addEventListener("resize", checkMedia); // Add resize listener
-
-  //   return () => window.removeEventListener("resize", checkMedia); // Cleanup listener on unmount
-  // }, []);
-  const canvasRef = useRef(null); // Use useRef to reference the canvas DOM element
-  let stars: THREE.Mesh[] = []; // Declare stars array inside the component but outside the useEffect
+  // Store stars in a ref to avoid the linter warning
+  const starsRef = useRef<THREE.Mesh[]>([]);
 
   useEffect(() => {
-    if (!canvasRef.current) return; // Guard to ensure the canvas is available
+    if (!canvasRef.current) return;
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
@@ -33,7 +22,7 @@ function Main() {
     camera.position.setX(-3);
 
     const renderer = new THREE.WebGLRenderer({
-      canvas: canvasRef.current, // Attach the renderer to the canvas
+      canvas: canvasRef.current,
     });
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -60,35 +49,26 @@ function Main() {
         .map(() => THREE.MathUtils.randFloatSpread(100));
 
       star.position.set(x, y, z);
-
       scene.add(star);
-      stars.push(star); // Add the created star to the stars array
+
+      // Push the new star into the ref array
+      starsRef.current.push(star);
     }
 
+    // Create stars
     Array(200).fill(null).forEach(addStar);
 
-    // background
-
+    // Background
     const spaceTexture = new THREE.TextureLoader().load("assets/sunset.jpg");
     scene.background = spaceTexture;
 
-    // avatar
+    // Avatar
     const tadeoTexture = new THREE.TextureLoader().load(
       "assets/Code-Examples.jpg"
     );
-    // const tadeoTexture = new THREE.TextureLoader().load(
-    //   "assets/Headshot-Square.png"
-    // );
-
-    // const tadeoGeometry = isDesktop
-    //   ? new THREE.BoxGeometry(2, 2, 2) // Bigger geometry for desktop
-    //   : new THREE.BoxGeometry(1, 1, 1); // Smaller geometry for mobile
-
     const tadeoGeometry = new THREE.BoxGeometry(2, 2, 2);
-
     const tadeoMaterial = new THREE.MeshBasicMaterial({ map: tadeoTexture });
     const tadeo = new THREE.Mesh(tadeoGeometry, tadeoMaterial);
-
     scene.add(tadeo);
 
     // Moon
@@ -102,22 +82,14 @@ function Main() {
         normalMap: normalTexture,
       })
     );
-
     scene.add(moon);
-    // console.log(moon);
 
     moon.position.z = 20;
     moon.position.setX(-10);
 
     tadeo.position.z = -5;
     tadeo.position.x = 1;
-    // tadeo.position.x = isDesktop ? 4 : 4;
     tadeo.position.y = 0;
-    // tadeo.position.x = isDesktop ? 4 : 1;
-    // {
-    //   isDesktop ? (tadeo.position.x = 4) : (tadeo.position.x = 4);
-    // }
-    // tadeo.position.y = isDesktop ? 1 : -0;
 
     function moveCamera() {
       const t = document.body.getBoundingClientRect().top;
@@ -138,15 +110,15 @@ function Main() {
 
     function animate() {
       requestAnimationFrame(animate);
+
+      // Torus rotation
       torus.rotation.x += 0.005;
       torus.rotation.y += 0.0025;
       torus.rotation.z += 0.005;
 
-      // Move each star
-      stars.forEach((star) => {
-        // Oscillate back and forth along the y-axis
+      // Move stars
+      starsRef.current.forEach((star) => {
         star.position.y += Math.sin(Date.now() * 0.001) * 0.02;
-        // Random movement in the x and z directions
         star.position.x += Math.random() * 0.002 - 0.001;
         star.position.z += Math.random() * 0.002 - 0.001;
       });
@@ -155,15 +127,14 @@ function Main() {
     }
     animate();
 
-    // Cleanup function to run when the component unmounts
+    // Cleanup on unmount
     return () => {
-      renderer.dispose(); // Dispose of the renderer to clean up resources
-      stars.forEach((star) => {
+      renderer.dispose();
+      starsRef.current.forEach((star) => {
         scene.remove(star);
-        star.geometry.dispose(); // Dispose of geometry
-        // star.material.dispose();  // Dispose of material
+        star.geometry.dispose();
       });
-      stars = []; // Clear the array
+      starsRef.current = [];
     };
   }, []);
 
