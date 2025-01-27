@@ -91,8 +91,7 @@ function Footer() {
             backgroundRepeat: "repeat-x",
             backgroundSize: "contain",
             backgroundPosition: "center bottom",
-            backgroundImage:
-              'url("https://latinowebstudio.com/wp-content/uploads/2023/09/party-bottom-2.png.webp")',
+            backgroundImage: 'url("/assets/Footer-Party-Bottom.png")',
           }}
         />
       </footer>
