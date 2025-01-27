@@ -7,7 +7,7 @@ import Main from "./js/main";
 import "./styles/body.scss";
 
 export default function Home() {
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
   return (
     <>
       <Main />
