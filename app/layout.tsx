@@ -20,9 +20,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "Web & Software Engineer for iOS, Android, & Web Apps - Latino Web Studio",
+    "Unlimited Graphic Design & Web Development. 7 Day Free Trial - Latino Web Studio",
   description:
-    "Professional web and software engineering services for iOS, Android, and web applications. Tailored solutions for businesses seeking high-quality, efficient app development from Latino Web Studio.",
+    "From theme updates hosting, DNS, server management to SEO, email marketing and custom designs, we handle all your technical needs.",
 };
 
 export default function RootLayout({
@@ -37,9 +37,12 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Professional web and software engineering services for iOS, Android, and web applications. Tailored solutions for businesses seeking high-quality, efficient app development from Latino Web Studio."
+          content="From theme updates hosting, DNS, server management to SEO, email marketing and custom designs, we handle all your technical needs."
         />
-        <meta property="og:image" content="assets/Latino-Web-Studio.jpg" />
+        <meta
+          property="og:image"
+          content="assets/Unlimited-Graphic-Design-Web-Development.jpg"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
       </head>
