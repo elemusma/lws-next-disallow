@@ -25,12 +25,28 @@ export default function Home() {
       <main>
         <section className="hero" style={{}}>
           <div className="container mx-auto px-4">
-            <div className="flex justify-start -mx-4">
-              <div className="lg:w-1/2 w-1/9 px-4">
-                <h1 className="text-secondary animated-heading">
-                  Unlimited SEO,<br></br>Graphic Design &amp;<br></br>Web
-                  Development
-                </h1>
+            <div className="flex flex-wrap md:flex-row-reverse justify-start mx-4">
+              <div className="lg:w-5/12 w-full px-4 lg:pb-0 pb-8">
+                <iframe
+                  className="video-container"
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/FndI3gLrKa0?si=UHYc-3c1oUdQLuo2"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+
+                {/* <HeadshotIcons /> */}
+              </div>
+              <div className="lg:w-7/12 w-full px-4">
+                <div className="lg:w-7/12 w-full">
+                  <h1 className="text-secondary animated-heading">
+                    Unlimited SEO, Graphic Design &amp;<br></br>Web Development
+                  </h1>
+                </div>
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
                 <div className="lg:w-9/12 w-1/9">
                   <p>
@@ -46,21 +62,6 @@ export default function Home() {
                     Schedule a Call
                   </a>
                 </div>
-              </div>
-              <div className="lg:w-5/12 w-1/9 px-4">
-                <iframe
-                  className="video-container"
-                  width="100%"
-                  height="315"
-                  src="https://www.youtube.com/embed/FndI3gLrKa0?si=UHYc-3c1oUdQLuo2"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                />
-
-                {/* <HeadshotIcons /> */}
               </div>
             </div>
           </div>
