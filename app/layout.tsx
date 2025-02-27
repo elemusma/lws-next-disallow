@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Nav from "./components/nav";
 import "./globals.css";
 // import "./styles/01.scss";
-import FacebookPixel from "./components/facebookPixel";
 import "./styles/btn.scss";
 import "./styles/fonts.scss";
 import "./styles/home.scss";
@@ -46,7 +45,7 @@ export default function RootLayout({
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <FacebookPixel />
+        {/* <FacebookPixel /> */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

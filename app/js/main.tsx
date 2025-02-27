@@ -69,7 +69,7 @@ function Main() {
     const tadeoGeometry = new THREE.BoxGeometry(2, 2, 2);
     const tadeoMaterial = new THREE.MeshBasicMaterial({ map: tadeoTexture });
     const tadeo = new THREE.Mesh(tadeoGeometry, tadeoMaterial);
-    scene.add(tadeo);
+    // scene.add(tadeo);
 
     // Moon
     const moonTexture = new THREE.TextureLoader().load("assets/moon.jpg");

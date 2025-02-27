@@ -17,7 +17,7 @@ export default function GetStarted() {
             style={{ flexWrap: "wrap" }}
           >
             <div className="px-4 text-center lg:w-1/2">
-              <h1>How to Get Started</h1>
+              <h2>How to Get Started</h2>
               <p>
                 Schedule a time below to discuss ideas to help you save time
                 while growing your business.

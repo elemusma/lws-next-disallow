@@ -1,5 +1,7 @@
 // import GoogleReviews from "./components/google_reviews";
+"use client";
 import Image from "next/image";
+import { useEffect } from "react";
 import CalendlyWidget from "./components/calendly";
 import Footer from "./components/footer";
 import HeadshotIcons from "./components/headshot-icons";
@@ -8,6 +10,15 @@ import "./styles/body.scss";
 
 export default function Home() {
   // const currentYear = new Date().getFullYear();
+  useEffect(() => {
+    const iframes = document.querySelectorAll(
+      ".video-container"
+    ) as NodeListOf<HTMLIFrameElement>;
+    iframes.forEach((iframe) => {
+      const aspectRatio = 560 / 315; // 16:9
+      iframe.style.height = `${iframe.offsetWidth / aspectRatio}px`;
+    });
+  }, []);
   return (
     <>
       <Main />
@@ -15,16 +26,18 @@ export default function Home() {
         <section className="hero" style={{}}>
           <div className="container mx-auto px-4">
             <div className="flex justify-start -mx-4">
-              <div className="lg:w-7/12 w-1/9 px-4">
+              <div className="lg:w-1/2 w-1/9 px-4">
                 <h1 className="text-secondary animated-heading">
-                  Unlimited<br></br>Graphic Design &amp;<br></br>Web Development
+                  Unlimited SEO,<br></br>Graphic Design &amp;<br></br>Web
+                  Development
                 </h1>
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
                 <div className="lg:w-9/12 w-1/9">
                   <p>
-                    We allow you to focus on growing your business without
-                    having to stress about the technical skills of design and
-                    programming.
+                    If you are an engineer expert witness and/or have an
+                    engineering firm we allow you to focus on growing your firm
+                    without having to stress about the technical skills of SEO
+                    or web development.
                   </p>
                   {/* <Login /> */}
                 </div>
@@ -34,8 +47,20 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="lg:w-3/12 w-1/9 px-4">
-                <HeadshotIcons />
+              <div className="lg:w-5/12 w-1/9 px-4">
+                <iframe
+                  className="video-container"
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/FndI3gLrKa0?si=UHYc-3c1oUdQLuo2"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+
+                {/* <HeadshotIcons /> */}
               </div>
             </div>
           </div>
