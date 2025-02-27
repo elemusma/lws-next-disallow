@@ -4,15 +4,15 @@
 
     @media only screen and (min-width: 768px) { // Tailwind's 'md'
         min-height: 46vh;
-        padding-top: 200px;
-        min-height: calc(100vh - 288px);
+        padding-top: 50px;
+        // min-height: calc(100vh - 288px);
     }
 
     @media only screen and (min-width: 1024px) { // Tailwind's 'lg'
         // min-height: 61.6vh;
         // min-height: 72vh;
         padding-top: 100px;
-        min-height: calc(100vh - 186px);
+        // min-height: calc(100vh - 186px);
     }
 }
 

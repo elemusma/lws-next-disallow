@@ -44,7 +44,7 @@ export default function Home() {
               <div className="lg:w-7/12 w-full px-4">
                 <div className="lg:w-7/12 w-full">
                   <h1 className="text-secondary animated-heading">
-                    Unlimited SEO, Graphic Design &amp;<br></br>Web Development
+                    Unlimited SEO, Graphic Design &amp; Web Development
                   </h1>
                 </div>
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
