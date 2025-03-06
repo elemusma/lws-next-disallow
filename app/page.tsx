@@ -50,10 +50,10 @@ export default function Home() {
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
                 <div className="lg:w-9/12 w-1/9">
                   <p>
-                    If you are an engineer expert witness and/or have an
-                    engineering firm we allow you to focus on growing your firm
-                    without having to stress about the technical skills of SEO
-                    or web development.
+                    If you are a mortgage lender, engineering firm or embroidery
+                    company we allow you to focus on growing your company
+                    without having to stress about web development, programming
+                    or SEO.
                   </p>
                   {/* <Login /> */}
                 </div>
@@ -139,6 +139,35 @@ export default function Home() {
           </div> */}
 
           {/* Content Wrapper */}
+          <div className="w-full px-4 sm:px-6 lg:px-8 pb-[150px]">
+            <div className="flex flex-wrap items-center">
+              <div className="w-full text-center pb-4">
+                <h2>Get SEO Results Like This</h2>
+                <p>
+                  Mark had zero traffic and no leads coming in. Now he's busy
+                  and working on his practice full-time.
+                </p>
+              </div>
+              <div className="md:w-1/2 w-full px-4">
+                <Image
+                  src="/photos/SEO-Results-01.jpg"
+                  alt="Clarify Your Message"
+                  width={2013}
+                  height={1194}
+                  className="object-contain"
+                />
+              </div>
+              <div className="md:w-1/2 w-full px-4">
+                <Image
+                  src="/photos/SEO-Results-02-copy.jpg"
+                  alt="Clarify Your Message"
+                  width={2013}
+                  height={1194}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
           <div className="relative z-10 container mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
               {/* Card 1 */}
