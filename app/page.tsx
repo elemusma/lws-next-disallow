@@ -144,7 +144,7 @@ export default function Home() {
               <div className="w-full text-center pb-4">
                 <h2>Get SEO Results Like This</h2>
                 <p>
-                  Mark had zero traffic and no leads coming in. Now he's busy
+                  Mark had zero traffic and no leads coming in. Now he is busy
                   and working on his practice full-time.
                 </p>
               </div>
