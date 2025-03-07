@@ -44,16 +44,16 @@ export default function Home() {
               <div className="lg:w-7/12 w-full px-4">
                 <div className="lg:w-7/12 w-full">
                   <h1 className="text-secondary animated-heading">
-                    Unlimited SEO, Graphic Design &amp; Web Development
+                    Unlimited SEO and Web Development
                   </h1>
                 </div>
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
                 <div className="lg:w-9/12 w-1/9">
                   <p>
-                    If you are a mortgage lender, engineering firm or embroidery
-                    company we allow you to focus on growing your company
-                    without having to stress about web development, programming
-                    or SEO.
+                    If you are a mortgage lender, engineering firm, print
+                    screening and embroidery or a company in the trades we allow
+                    you to focus on growing your company without having to
+                    stress about technical problems with web development or SEO.
                   </p>
                   {/* <Login /> */}
                 </div>
