@@ -1,5 +1,6 @@
 // import GoogleReviews from "./components/google_reviews";
 "use client";
+import Head from "next/head";
 import Image from "next/image";
 import { useEffect } from "react";
 import CalendlyWidget from "./components/calendly";
@@ -21,6 +22,26 @@ export default function Home() {
   }, []);
   return (
     <>
+      <Head>
+        <title>Unlimited Web Development & SEO - Latino Web Studio</title>
+        <meta
+          name="description"
+          content="From theme updates hosting, DNS, server management to SEO, email marketing and custom designs, we handle all your technical needs."
+        />
+        <meta
+          property="og:title"
+          content="Unlimited Web Development & SEO - Latino Web Studio"
+        />
+        <meta
+          property="og:description"
+          content="From theme updates hosting, DNS, server management to SEO, email marketing and custom designs, we handle all your technical needs."
+        />
+        <meta property="og:url" content="https://latinowebstudio.com/" />
+        <meta
+          property="og:image"
+          content="/assets/public/assets/Unlimited-Web-Development-SEO.jpg"
+        />
+      </Head>
       <Main />
       <main>
         <section className="hero" style={{}}>

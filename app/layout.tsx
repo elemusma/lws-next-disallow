@@ -19,23 +19,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Unlimited Web Development & SEO. 7 Day Free Trial - Latino Web Studio",
+  title: "Unlimited Web Development & SEO - Latino Web Studio",
   description:
     "From theme updates hosting, DNS, server management to SEO, email marketing and custom designs, we handle all your technical needs.",
-  openGraph: {
-    title: "Unlimited Web Development & SEO - Latino Web Studio",
-    description:
-      "From theme updates hosting, DNS, server management to SEO, email marketing and custom designs, we handle all your technical needs.",
-    images: [
-      {
-        url: "/assets/Unlimited-Graphic-Design-Web-Development.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Latino Web Studio Services",
-      },
-    ],
-  },
 };
 
 export default function RootLayout({
