@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       images: [
         {
-          url: "/photos/ebitda-calculator.jpg",
+          url: `https://${Website}/photos/ebitda-calculator.jpg`,
           width: 1200,
           height: 630,
           alt: "EBITDA Calculator - What Is Your Business Worth?",
