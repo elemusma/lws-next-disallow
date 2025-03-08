@@ -5,6 +5,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: `EBITDA Calculator - What Is Your Business Worth? - ${Company}`,
     description: "Built by Tadeo Martinez. Investor. Entrepreneur. Programmer.",
+    metadataBase: new URL(`https://${Website}`),
     openGraph: {
       title: `EBITDA Calculator - What Is Your Business Worth? - ${Company}`,
       description:
