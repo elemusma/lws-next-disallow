@@ -20,9 +20,22 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "Unlimited Graphic Design & Web Development. 7 Day Free Trial - Latino Web Studio",
+    "Unlimited Web Development & SEO. 7 Day Free Trial - Latino Web Studio",
   description:
     "From theme updates hosting, DNS, server management to SEO, email marketing and custom designs, we handle all your technical needs.",
+  openGraph: {
+    title: "Unlimited Web Development & SEO - Latino Web Studio",
+    description:
+      "From theme updates hosting, DNS, server management to SEO, email marketing and custom designs, we handle all your technical needs.",
+    images: [
+      {
+        url: "/assets/Unlimited-Graphic-Design-Web-Development.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Latino Web Studio Services",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -35,17 +48,6 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="assets/Favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="description"
-          content="From theme updates hosting, DNS, server management to SEO, email marketing and custom designs, we handle all your technical needs."
-        />
-        <meta
-          property="og:image"
-          content="assets/Unlimited-Graphic-Design-Web-Development.jpg"
-        />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        {/* <FacebookPixel /> */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
