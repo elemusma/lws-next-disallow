@@ -22,6 +22,28 @@ export const metadata: Metadata = {
   title: "Web Design & SEO in Denver, CO - Latino Web Studio",
   description:
     "From theme updates hosting, DNS, server management to SEO, email marketing and custom designs, we handle all your technical needs.",
+  metadataBase: new URL("https://latinowebstudio.com"), // required for relative OG URLs
+
+  openGraph: {
+    title: "Web Design & SEO in Denver, CO - Latino Web Studio",
+    description:
+      "From theme updates hosting, DNS, server management to SEO, email marketing and custom designs, we handle all your technical needs.",
+    url: "https://latinowebstudio.com",
+    siteName: "Latino Web Studio",
+    images: [
+      {
+        url: "/assets/Web-Design-SEO.jpg", // Make sure this path is valid!
+        width: 1200,
+        height: 630,
+        alt: "Web Design and SEO",
+      },
+    ],
+    type: "website",
+  },
+
+  icons: {
+    icon: "/assets/Favicon.ico", // Ensure this path is correct
+  },
 };
 
 export default function RootLayout({
@@ -31,10 +53,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="assets/Favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
