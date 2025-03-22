@@ -23,14 +23,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Unlimited Web Development & SEO - Latino Web Studio</title>
+        <title>Web Design & SEO in Denver, CO - Latino Web Studio</title>
         <meta
           name="description"
           content="From theme updates hosting, DNS, server management to SEO, email marketing and custom designs, we handle all your technical needs."
         />
         <meta
           property="og:title"
-          content="Unlimited Web Development & SEO - Latino Web Studio"
+          content="Web Design & SEO in Denver, CO - Latino Web Studio"
         />
         <meta
           property="og:description"
@@ -65,14 +65,14 @@ export default function Home() {
               <div className="lg:w-7/12 w-full px-4">
                 <div className="lg:w-7/12 w-full">
                   <h1 className="text-secondary animated-heading">
-                    Unlimited SEO and Web Development
+                    Web Design &amp; SEO
                   </h1>
                 </div>
                 {/* <h2>iOS, Android, &amp; Web Apps</h2> */}
                 <div className="lg:w-9/12 w-1/9">
                   <p>
-                    If you are a mortgage lender, engineering firm, print
-                    screening and embroidery or a company in the trades we allow
+                    If you are an engineering firm, mortgage lender, print
+                    screening and embroidery or a blue collar company we allow
                     you to focus on growing your company without having to
                     stress about technical problems with web development or SEO.
                   </p>

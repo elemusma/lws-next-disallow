@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Unlimited Web Development & SEO - Latino Web Studio",
+  title: "Web Design & SEO in Denver, CO - Latino Web Studio",
   description:
     "From theme updates hosting, DNS, server management to SEO, email marketing and custom designs, we handle all your technical needs.",
 };
