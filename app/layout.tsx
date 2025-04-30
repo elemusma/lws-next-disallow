@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Nav from "./components/nav";
 import "./globals.css";
 // import "./styles/01.scss";
+import Footer from "./components/footer";
 import "./styles/btn.scss";
 import "./styles/fonts.scss";
 import "./styles/home.scss";
@@ -58,6 +59,7 @@ export default function RootLayout({
       >
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -60,9 +60,9 @@ function Logo() {
             style={{ margin: 0, fontSize: "70%", lineHeight: 1 }}
           >
             {isDesktop ? (
-              <em>Unlimited web development &amp; SEO</em>
+              <em>Web Design &amp; SEO</em>
             ) : (
-              <em>Unlimited web development &amp; SEO</em>
+              <em>Web Design &amp; SEO</em>
             )}
           </p>
         </div>
