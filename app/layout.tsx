@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   description:
     "Latino Web Studio provides expert web design, SEO, and full-stack tech support for businesses in Denver and nationwide. From DNS and hosting to email marketing and custom design, we handle the tech so you can focus on growth.",
   metadataBase: new URL("https://latinowebstudio.com"), // required for relative OG URLs
+  alternates: {
+    canonical: "https://latinowebstudio.com", // ✅ correct canonical
+  },
 
   openGraph: {
     title: "Web Design & SEO in Denver, CO - Latino Web Studio",
