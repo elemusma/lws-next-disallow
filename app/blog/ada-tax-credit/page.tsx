@@ -192,19 +192,19 @@ export default function AdaTaxCredit() {
         </h2>
         <p>
           <strong>
-            Accessibility is an investment in your business's future.
+            Accessibility is an investment in your business&apos;s future.
           </strong>{" "}
           The <strong>ADA Tax Credit</strong> makes this investment more
           affordable, helping small businesses create environments that welcome
           everyone.
         </p>
         <p className="mt-4">
-          <strong>Don't wait</strong> for a lawsuit or missed opportunity—take
+          <strong>Don&apos;t wait</strong> for a lawsuit or missed opportunity—take
           proactive steps to make your business more inclusive today.
         </p>
         <blockquote className="border-l-4 border-blue-500 pl-4 italic mt-4">
-          "Every step towards accessibility is a step towards growth,
-          innovation, and social responsibility."
+          &quot;Every step towards accessibility is a step towards growth,
+          innovation, and social responsibility.&quot;
         </blockquote>
       </ContentBlock>
       {/* </div> */}
