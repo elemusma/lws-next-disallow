@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Nav from "./components/nav";
+import Script from 'next/script';
 import "./globals.css";
 // import "./styles/01.scss";
 import Footer from "./components/footer";
@@ -58,28 +59,32 @@ export default function RootLayout({
   return (
     <html lang="en">
     <head>
-        <script
-          id="vtag-ai-js"
-          async
-          src="https://r2.leadsy.ai/tag.js"
-          data-pid="1jlkaeom8Av6xi5Eq"
-          data-version="062024"
-        ></script>
-        {/* Google Analytics */}
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-GY6QBLTKD5"
-  ></script>
-  <script
-    dangerouslySetInnerHTML={{
-      __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-GY6QBLTKD5');
-      `,
-    }}
-  />
+    <meta name="robots" content="noindex, nofollow" />
+    <Script
+  id="vtag-ai-js"
+  src="https://r2.leadsy.ai/tag.js"
+  data-pid="1jlkaeom8Av6xi5Eq"
+  data-version="062024"
+  strategy="afterInteractive"
+  async
+/>
+        {/* Google Analytics script */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-GY6QBLTKD5"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GY6QBLTKD5');
+          `,
+        }}
+      />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
